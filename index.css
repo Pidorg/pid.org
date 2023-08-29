@@ -1,13 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #95232B;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    color: #FE7C21;
+    text-decoration: underline;
 }
 
 .grid-container {
@@ -19,12 +20,15 @@ header {
 
 .grid-item {
     border-radius: 8px;
+    width: 200px;
+    height: 300px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .grid-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
