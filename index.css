@@ -36,6 +36,22 @@ header {
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
 
+a {
+  color: inherit; /* Use the color of the parent element */
+  text-decoration: underline; /* Remove underline */
+}
+
+/* This styles visited links to look the same as normal links */
+a:visited {
+  color: inherit; /* Use the color of the parent element */
+  text-decoration: underline; /* Remove underline for visited links */
+}
+
+/* Optional: Style links when hovered */
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,6 +115,14 @@ body {
   width: 140px;
   height: 248px;
   box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 1), inset 0 0 0 11px rgba(0, 0, 0, 0.125);
+}
+
+.back a {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #777;
 }
 
 h1 {
